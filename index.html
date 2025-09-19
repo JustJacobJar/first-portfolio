@@ -5,10 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>JAR Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -18,44 +17,86 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I'm a UK based full stack / front-end developer and recent graduate. I
-          love turning stunning desings into fully functional websites. I
-          started out coding and developing games. This quickly turned into a
-          passion and I learnt all the basics, from 3D modelling and art, to
-          programming. Now I mainly focus on web development, using React and
-          Typescript.
-        </p>
-        <ul>
-          <li>Typescript</li>
-          <li>TailwindCss</li>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>OAuth2.0</li>
-          <li>C#</li>
-          <li>PostgreSQL</li>
-        </ul>
+    <main style="margin-top: 64px">
+      <section id="about" class="section-a">
+        <h2 class="section-title">About</h2>
+        <div
+          style="
+            margin-top: 32px;
+            margin-bottom: 32px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            backdrop-filter: blur(32px);
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            max-width: 800px;
+            justify-items: center;
+            padding: 16px;
+          ">
+          <p
+            style="
+              padding-left: 16px;
+              grid-row-start: 1;
+              padding-right: 16px;
+              text-wrap: pretty;
+              height: 100%;
+              place-content: center;
+            ">
+            I'm a UK based full stack / front-end developer and recent graduate.
+            I love turning stunning desings into fully functional websites. I
+            started out coding and developing games. This quickly turned into a
+            passion and I learnt all the basics, from 3D modelling and art, to
+            programming. Now I mainly focus on web development, using React and
+            Typescript.
+          </p>
+          <div style="width: 100%; grid-row-start: 2; place-content: center">
+            <ul style="display: grid; grid-template-columns: 1fr 1fr">
+              <li>Typescript</li>
+              <li>TailwindCss</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>OAuth2.0</li>
+              <li>C#</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <img
+            style="
+              width: 75%;
+              aspect-ratio: 1/1;
+              grid-row: 1 / span 2;
+              border-radius: 100%;
+              align-self: center;
+            "
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Ff3%2F52%2F2b%2Ff3522b033ab1cd006b4478565b51140c.jpg&f=1&nofb=1&ipt=1d6bae6e9f444d2f4b20066271e7d81a5442ac673a4ff2cba310f7868fb5c30e" />
+        </div>
       </section>
-      <section id="projects">
-        <h2>Portfolio</h2>
+      <section id="projects" class="section-b">
+        <h2 class="section-title">Portfolio</h2>
         <a
           href="https://my-poke-tracker.vercel.app/"
           target="_blank"
           rel="noopener noreferrer">
-          <img width="640" height="360" src="./pokeSite.jpg" />
+          <img
+            class="portfolio-site"
+            width="640"
+            height="360"
+            src="./public/pokeSite.jpg" />
         </a>
         <a
           href="https://justjacobjar.github.io/pokemon-guess-who/"
           target="_blank"
           rel="noopener noreferrer">
-          <img width="640" height="360" src="./pokeTeam.jpg" />
+          <img
+            class="portfolio-site"
+            width="640"
+            height="360"
+            src="./public/pokeTeam.jpg" />
         </a>
       </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
+      <section id="contact" class="section-a">
+        <h2 class="section-title">Contact Me</h2>
         <form>
           <div>
             <div>

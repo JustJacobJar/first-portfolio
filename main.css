@@ -1,0 +1,75 @@
+/** @format */
+
+:root {
+  background-image: url(public/Background3.webp);
+  background-size: stretch;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  outline-style: solid;
+}
+
+header {
+  backdrop-filter: blur(16px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  backdrop-filter: blur(16px);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.section-a {
+  /* background-color: rgba(255, 255, 255, 0.25); */
+  /* backdrop-filter: blur(8px); */
+  justify-items: center;
+  width: 100%;
+}
+.section-b {
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  /* backdrop-filter: blur(8px); */
+  justify-items: center;
+  width: 100%;
+}
+
+.portfolio-site {
+  aspect-ratio: 9/16;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.33);
+}
+
+.contact-form {
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  backdrop-filter: blur(32px);
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
