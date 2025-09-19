@@ -18,22 +18,19 @@
       </nav>
     </header>
     <main style="margin-top: 64px">
+      <!-- About Me -->
+      <h2 class="section-title">About</h2>
       <section id="about" class="section-a">
-        <h2 class="section-title">About</h2>
-        <div
-          style="
-            margin-top: 32px;
-            margin-bottom: 32px;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 16px;
-            backdrop-filter: blur(32px);
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            max-width: 800px;
-            justify-items: center;
-            padding: 16px;
-          ">
+        <div class="about-box">
+          <img
+            style="
+              width: 75%;
+              aspect-ratio: 1/1;
+              grid-row: 1 / span 2;
+              border-radius: 100%;
+              align-self: center;
+            "
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Ff3%2F52%2F2b%2Ff3522b033ab1cd006b4478565b51140c.jpg&f=1&nofb=1&ipt=1d6bae6e9f444d2f4b20066271e7d81a5442ac673a4ff2cba310f7868fb5c30e" />
           <p
             style="
               padding-left: 16px;
@@ -61,88 +58,115 @@
               <li>PostgreSQL</li>
             </ul>
           </div>
-          <img
-            style="
-              width: 75%;
-              aspect-ratio: 1/1;
-              grid-row: 1 / span 2;
-              border-radius: 100%;
-              align-self: center;
-            "
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Ff3%2F52%2F2b%2Ff3522b033ab1cd006b4478565b51140c.jpg&f=1&nofb=1&ipt=1d6bae6e9f444d2f4b20066271e7d81a5442ac673a4ff2cba310f7868fb5c30e" />
         </div>
       </section>
+      <!-- Projects -->
+      <h2 class="section-title">Portfolio</h2>
       <section id="projects" class="section-b">
-        <h2 class="section-title">Portfolio</h2>
-        <a
-          href="https://my-poke-tracker.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img
-            class="portfolio-site"
-            width="640"
-            height="360"
-            src="./public/pokeSite.jpg" />
-        </a>
-        <a
-          href="https://justjacobjar.github.io/pokemon-guess-who/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img
-            class="portfolio-site"
-            width="640"
-            height="360"
-            src="./public/pokeTeam.jpg" />
-        </a>
-      </section>
-      <section id="contact" class="section-a">
-        <h2 class="section-title">Contact Me</h2>
-        <form>
-          <div>
-            <div>
-              <label>Name</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>Email</label>
-              <input type="email" />
-            </div>
+        <div class="projects">
+          <div class="project-box">
+            <a
+              href="https://my-poke-tracker.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img class="project-img" src="./public/pokeTeam.jpg" />
+            </a>
+            <p style="max-width: 600px; place-self: center">
+              My Poke Team Creator is a place where users can view and create
+              their own poke teams and describe how to use them.
+            </p>
           </div>
-          <div>
-            <label>Message</label>
-            <textarea placeholder="Enter your message here"></textarea>
+          <div class="project-box">
+            <a
+              href="https://justjacobjar.github.io/pokemon-guess-who/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img class="project-img" src="./public/pokeSite.jpg" />
+            </a>
+            <p style="max-width: 600px; place-self: center">
+              A WebApp that uses an open API to randomly select and display data
+              for gameplay purposes.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <h2 class="section-title">Contact Me</h2>
+      <section id="contact" class="section-a">
+        <form class="contact-form">
+          <div
+            style="
+              width: 100%;
+              gap: 0.25rem;
+              display: flex;
+              flex-direction: column;
+            ">
+            <label style="width: 100%;"
+              >Name
+              <input class="input-field" type="text" />
+            </label>
+          </div>
+          <div
+            style="
+              width: 100%;
+              gap: 0.25rem;
+              display: flex;
+              flex-direction: column;
+            ">
+            <label style="width: 100%;"
+              >Email
+              <input class="input-field" type="email" />
+            </label>
+          </div>
+          <div
+            style="
+              width: 100%;
+              gap: 0.25rem;
+              display: flex;
+              flex-direction: column;
+            ">
+            <label style="width: 100%;"
+              >Message
+              <textarea
+                class="input-field"
+                style="min-height: 6rem"
+                placeholder="Enter your message here"></textarea>
+            </label>
           </div>
         </form>
       </section>
     </main>
     <footer>
-      <a
-        href="https://github.com/JustJacobJar"
-        target="_blank"
-        rel="noopener noreferrer">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 1024 1024"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-            transform="scale(64)"
-            fill="#000F" />
-        </svg>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jacob-a-b58747184/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <svg width="24" height="24" viewBox="0 0 256 256">
-          <path
-            d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
-            fill="#0A66C2" />
-        </svg>
-      </a>
+      <div style="place-self: center; gap: 1rem; display: flex">
+        <a
+          href="https://github.com/JustJacobJar"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+              transform="scale(64)"
+              fill="#fffF" />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jacob-a-b58747184/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg width="48" height="48" viewBox="0 0 256 256">
+            <path
+              d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+              fill="#0A66C2" />
+          </svg>
+        </a>
+      </div>
+      <label style="color: white">© 2025 - All Rights Reserved</label>
     </footer>
   </body>
 </html>
